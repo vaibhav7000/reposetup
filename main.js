@@ -2,7 +2,7 @@ const fs = require('fs');
 
 function writeFile(text){
     return new Promise(function(resolve,reject){
-        fs.appendFile('a.txt',text,function(err){
+        fs.appendFile('b.txt',text,function(err){
             if(err){
                 reject('error is present');
             } else{
@@ -13,7 +13,7 @@ function writeFile(text){
 };
 
 function readFile(msg){
-    fs.readFile('a.txt','utf-8',function(err,data){
+    fs.readFile('b.txt','utf-8',function(err,data){
         if(err){
             console.log('err present in reading');
         } else{
