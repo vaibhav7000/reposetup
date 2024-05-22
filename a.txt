@@ -1,2 +1,5 @@
 hi there !hi there !hi there !
 
+git fetch -->  bring the changes from remote repo to local repo but does not affect the branch does not create merge conflicts
+git pull --> git fetch + git merge
+
